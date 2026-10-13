@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conteúdo Aula16 - HTML</title>
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .esq {
+            background-color: blue;
+            padding: 20px;
+            width: 20%;
+            float: left;
+        }
+
+        .meio {
+            background-color: blueviolet;
+            padding: 20px;
+            width: 60%;
+            float: left;
+        }
+
+        .dir {
+            background-color: darkmagenta;
+            padding: 20px;
+            width: 20%;
+            float: left;
+        }
+
+        @media screen and (max-width: 800px) {
+            .esq, .meio, .dir {
+                width: 100%;
+            }
+
+            }
+        
+
+    </style>
+
+</head>
+<body>
+   
+    <h1>Responsividade no HTML</h1>
+
+    <h3>Imagem responsiva com width 100%</h3>
+
+    <img src="imagesmj.jpg" style="width: 100%;">
+
+    <hr>
+
+    <h3>Imagem responsiva com max-width 100%</h3>
+
+    <img src="imagesmj.jpg" style="max-width: 100%;">
+
+    <hr>
+
+    <h3 style="font-size: 5vw;">Texto responsivo com a unidade de medida vw</h3>
+
+    <p style="font-size: 3vw;">Ser mais do que ter!</p>
+
+    <hr>
+
+    <h3>Responsividade com media query</h3>
+
+    <div class="esq">
+        <p>Div esquerda</p>
+    </div>
+    <div class="meio">
+        <p>Div centro</p>
+    </div>
+    <div class="dir">
+        <p>Div direita</p>
+    </div>
+
+</body>
+</html>
